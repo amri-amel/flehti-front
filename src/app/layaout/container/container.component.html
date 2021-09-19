@@ -1,0 +1,12 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let article of articlesTab">
+        <!--card -->
+        <mat-card class="example-card">
+            <img mat-card-image [src]="article.imageUrl">
+            <mat-card-content>
+                <p> {{article.Desciption}} </p>
+            </mat-card-content>
+        </mat-card>
+        <!-- fin card -->
+    </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,38 @@
+<mat-toolbar color="">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+    <span>Flehti</span>
+    <!-- -->
+
+    <span class="spacer"></span>
+
+    <button mat-button>Connexion  <mat-icon>login</mat-icon></button>/
+    <button mat-button color="primary">SignIn <mat-icon>account_circle</mat-icon></button>
+
+</mat-toolbar>
+
+
+
+
+
+<mat-toolbar class="center">
+
+    <button mat-button [matMenuTriggerFor]="Home">Home</button>
+    <mat-menu #Home="matMenu">
+        <button mat-menu-item>aa</button>
+        <button mat-menu-item>bb</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="Parcel">Parcel</button>
+    <mat-menu #Parcel="matMenu">
+        <button mat-menu-item>a</button>
+        <button mat-menu-item>b</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="Equipement">Equipement</button>
+    <mat-menu #Equipement="matMenu">
+        <button mat-menu-item>aa</button>
+        <button mat-menu-item>bb</button>
+    </mat-menu>
+
+</mat-toolbar>
